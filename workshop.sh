@@ -59,6 +59,6 @@ pe "docker inspect harbor.59s.io/59s/go-app-1 | jq '.[].Config.Labels.\"io.build
 wait
 clear
 
-pe "docker inspect harbor.59s.io/59s/go-app-1 | jq '.[].Config.Labels.\"io.buildpacks.lifecycle.metadata\" | fromjson | .buildpacks'"
+pe "docker inspect  harbor.59s.io/59s/go-app-1 | jq '.[].Config.Labels.\"io.buildpacks.build.metadata\" | fromjson'"
 wait
 clear
