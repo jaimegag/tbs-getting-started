@@ -9,8 +9,7 @@ Go from a blank kubernetes cluster to an environment running Tanzu Build Service
   * A fork of spring-petclinic
 * A docker hub or similar registry available
   * Assumes docker hub
-* duffle installed
-* The pb cli
+* The kp cli
 * a k8s cluster
   * with a default storage class configured
 
@@ -24,3 +23,8 @@ Go from a blank kubernetes cluster to an environment running Tanzu Build Service
 ## Using the demos
 
 Once you've run the templating script your repo will be approriately configured for use. Test out the install and demo scripts then get started.
+
+
+## End2End demo
+
+Use the `e2e-main.sh` script to follow demo steps leveraging the `tkg-lab-e2e-adaptation` setup of lab(s). This leverages TKG for k8s, Harbor for container registry, Concourse for the CICD pipelines, and spring-petclinic for the app.
