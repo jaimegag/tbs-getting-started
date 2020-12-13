@@ -27,4 +27,4 @@ Once you've run the templating script your repo will be approriately configured 
 
 ## End2End demo
 
-Use the `e2e-main.sh` script to follow demo steps leveraging the [tkg-lab-e2e-adaptation](https://github.com/jaimegag/tkg-lab-e2e-adaptation) setup of lab(s). This leverages TKG for k8s, Harbor for container registry, Concourse for the CICD pipelines, and spring-petclinic for the app.
+Use the [e2e-main.sh](./e2e-main.sh) script to follow demo steps leveraging the [tkg-lab-e2e-adaptation](https://github.com/jaimegag/tkg-lab-e2e-adaptation) setup of lab(s). This leverages TKG for k8s, Harbor for container registry, Concourse for the CICD pipelines, and spring-petclinic for the app.
