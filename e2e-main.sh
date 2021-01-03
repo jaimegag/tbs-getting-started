@@ -40,10 +40,10 @@ kp clusterstack list
 # Explore builders
 kp clusterbuilder list
 
-# Update cluster stack to make it match with 100.0.46
+# Update cluster stack to make it match with 100.0.55
 kp clusterstack update demo-stack \
- --build-image $TBS_REPOSITORY/build@sha256:f61360cf0751a0e1706ae95ceb96a0a084e6e39c0b2754970eb5f2ef9f3e6d8c \
- --run-image $TBS_REPOSITORY/run@sha256:5330d81fb5bc38558404899f7324915d4f1ebdcb5a29f1c6b45a2638a941212d
+ --build-image $TBS_REPOSITORY/build@sha256:cf87e6b7e69c5394440c11d41c8d46eade57d13236e4fb79c80227cc15d33abf \
+ --run-image $TBS_REPOSITORY/run@sha256:52a9a0002b16042b4d34382bc244f9b6bf8fd409557fe3ca8667a5a52da44608
 # Image rebuild
 # Check Concourse to see CD triggered
 # Check Harbor again for a new image with less vulnerabilities
@@ -67,7 +67,9 @@ kp image patch spring-petclinic \
  --wait  \
  --local-path target/spring-petclinic-2.4.0.BUILD-SNAPSHOT.jar
 
-# Update cluster stack to make it match with 100.0.22
+# Cleanup
+
+# Update cluster stack to make it match with 100.0.22 again
 kp clusterstack update demo-stack  \
   --build-image $TBS_REPOSITORY/build@sha256:ee37e655a4f39e2e6ffa123306db0221386032d3e6e51aac809823125b0a400e \
   --run-image $TBS_REPOSITORY/run@sha256:51cebe0dd77a1b09934c4ce407fb07e3fc6f863da99cdd227123d7bfc7411efa
